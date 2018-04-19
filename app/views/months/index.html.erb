@@ -1,0 +1,8 @@
+<h1>months</h1>
+
+<% @months.each do |month| %>
+    <div>
+        <%= link_to month.name, month_path(month) %> - <%= month.user %>
+    </div>
+
+<% end %>
